@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<title>GroupChat Summary</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+		
+		<link rel="stylesheet" href="{{ url_for('static', filename='layout/style.css') }}">
+	</head>
+	<body>
+		<ng-include src="'{{ url_for('static', filename='layout/navbar.html') }}'"></ng-include>
+		<div class="container-fluid" ui-view></div>
+	</body>
+
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+	<script src="{{ url_for('static', filename='app.js') }}"></script>
+
+	<script src="{{ url_for('static', filename='blocks/router/router.module.js') }}"></script>
+	<script src="{{ url_for('static', filename='blocks/router/routerHelperProvider.js') }}"></script>
+
+	<script src="{{ url_for('static', filename='core/core.module.js') }}"></script>
+
+	<script src="{{ url_for('static', filename='threads/threads.module.js') }}"></script>
+	<script src="{{ url_for('static', filename='threads/threads.routes.js') }}"></script>
+	<script src="{{ url_for('static', filename='threads/threads.controller.js') }}"></script>
+	<script src="{{ url_for('static', filename='threads/thread-detail.controller.js') }}"></script>
+	<script src="{{ url_for('static', filename='threads/threads.service.js') }}"></script>
+</html>

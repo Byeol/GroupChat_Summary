@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.thread-title {
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 700
+}
+
+.thread-datetime {
+	font-weight: 100
+}
+
+.thread-detail-datetime {
+	font-weight: 100
+}

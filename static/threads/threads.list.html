@@ -1,0 +1,7 @@
+<ul class="list-group">
+	<a ng-repeat="thread in vm.threads" ui-sref="threads.detail({ threadId: thread.id })" class="list-group-item">
+		<span class="thread-title">{{thread.title}}: {{thread.messages[0].text}}</span><br/>
+		<span class="thread-datetime">{{thread.messages[0].dt.month}}월 {{thread.messages[0].dt.day}}일 {{thread.messages[0].dt.hour}}시 {{thread.messages[0].dt.minute}}분</span>
+		<span class="badge">{{thread.messages.length}}</span>
+	</a>
+</ul>

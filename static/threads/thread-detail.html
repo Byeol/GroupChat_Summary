@@ -1,0 +1,6 @@
+<h2>{{vm.thread.title}}</h2>
+<hr/>
+<span ng-repeat="message in vm.thread.messages">
+	<span class="thread-detail-name"><b>{{message.name}}</b></span> <span class="thread-detail-datetime">{{message.dt.month}}월 {{message.dt.day}}일 {{message.dt.hour}}시 {{message.dt.minute}}분</span>
+	<p class="thread-detail-text">{{message.text}}</p>
+</span>
